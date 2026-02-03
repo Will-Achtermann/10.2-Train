@@ -1,6 +1,5 @@
-import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
+import javax.swing.*;
 
 
 public class Display extends JPanel{
@@ -10,6 +9,8 @@ public class Display extends JPanel{
 	public void paintComponent(Graphics g){
 		super.paintComponent(g); //satisfies the parent class' requirements.
 		setBackground(Color.WHITE);
+		Train train = new Train(150, g);
+		train.addCar("kdjf", Color.WHITE);
 
 	}
 }
