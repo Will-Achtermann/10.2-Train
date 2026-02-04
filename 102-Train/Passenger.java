@@ -15,6 +15,7 @@ public class Passenger extends RailCar{
         g.setColor(Color.BLACK);
         g.fillOval(xCor, 460, 50, 50);
         g.fillOval(xCor + 100, 460, 50, 50);
+        g.fillRect(xCor-40, 440, 40, 10);
 
         //Windows
         g.setColor(Color.WHITE);

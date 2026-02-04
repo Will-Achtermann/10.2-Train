@@ -1,9 +1,9 @@
 import java.awt.*;
 
-public class Passenger extends RailCar{
+public class Caboos extends RailCar{
     private Color color;
 
-    public Passenger(int x, Graphics g, Color c){
+    public Caboos(int x, Graphics g, Color c){
         super(x, g);
         this.color = c;
     }
@@ -18,13 +18,16 @@ public class Passenger extends RailCar{
         g.fillRect(xCor-40, 440, 40, 10);
 
         //Window
-        g.drawRect(Xcor + 25, 415, 25, 35);
-        g.drawRect(Xcor + 50, 415, 25, 35);
+        g.setColor(Color.WHITE);
+        g.fillRect(Xcor + 20, 425, 20, 20);
+        g.fillRect(Xcor + 60, 425, 20, 20);
 
-        g.drawLine(xCor + 25, 415, xCor + 50, 450);
-        g.drawLine(xCor + 50, 415, xCor + 50, 450);
-        g.drawLine(xCor + 25, 450, xCor + 50, 415);
-        g.drawLine(xCor + 50, 450, xCor + 50, 415);
+        //Top bit
+        g.setColor(color);
+        g.fillRect(Xcor + 20, 370, 60, 30);
+        g.setColor(color.BLACK);
+        g.fillRect(Xcor+15, 360, 70, 10);
+
 
     }
 }
