@@ -16,9 +16,13 @@ public class Locomotive extends RailCar{
         g.fillOval(xCor, 460, 50, 50);
         g.fillOval(xCor + 100, 460, 50, 50);
 
-        //Locomotive features
-        int[] xCors = {xCor - }; //TODO: add feautres of locomotive and the other cars
-        g.fillPolygon([1, 3, 5], [1, 3, 5], 3);
+        //ramp
+        int[] xCors = {xCor - 25, xCor, xCor}; //TODO: add feautres of locomotive and the other cars
+        int[] yCors = {475, 475, 450};
+        g.fillPolygon(xCors, yCors, 3);
+
+        //Smoke stack
+        g.fillRect(Xcor + 10, 350, 20, 50);
 
     }
 }
