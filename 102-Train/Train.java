@@ -13,27 +13,41 @@ public class Train{
         trains = new ArrayList<RailCar>();
     }
 
-    public void addCar(String carName, Color color, int position){
-        RailCar car = new RailCar(xCor, g);
-        car.drawCar(); //TODO: add cars to the array list, and then draw them
+    public void addCar(int position, String carName, Color color){
         if (carName.equals("Locomotive")){
-            Locomotive l = new Locomotive(xCor, g, color.BLUE);
+            Locomotive l = new Locomotive(xCor, g, color);
             trains.add(position, l);
         }else if (carName.equals("Freight")){
-            Freight f = new Freight(xCor, g, color.GREEN);
+            Freight f = new Freight(xCor, g, color);
             trains.add(position, f);
         }else if (carName.equals("Passenger")){
-            Passenger p = new Passenger(xCor, g, color.GRAY);
+            Passenger p = new Passenger(xCor, g, color);;
             trains.add(position, p);
         }else if (carName.equals("Caboose")){
-            Caboos c = new Caboos(xCor, g, color.RED);
+            Caboos c = new Caboos(xCor, g, color);
             trains.add(position, c);
+        }
+    }
+
+    public void addCar(String carName, Color color){
+        if (carName.equals("Locomotive")){
+            Locomotive l = new Locomotive(xCor, g, color);
+            trains.add(l);
+        }else if (carName.equals("Freight")){
+            Freight f = new Freight(xCor, g, color);
+            trains.add(f);
+        }else if (carName.equals("Passenger")){
+            Passenger p = new Passenger(xCor, g, color);;
+            trains.add(p);
+        }else if (carName.equals("Caboose")){
+            Caboos c = new Caboos(xCor, g, color);
+            trains.add(c);
         }
     }
 
     public void showCars(){
         for (int i = 0; i < trains.size(); i++){
-            trains.get(i).setxCor(i * 150 + xCor); // ADD GETTERS AND SETTER IDIOT
+            trains.get(i).setxCor(i * 175 + xCor); // ADD GETTERS AND SETTER IDIOT
             trains.get(i).drawCar();
         }
     }

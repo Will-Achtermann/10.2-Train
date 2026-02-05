@@ -10,7 +10,15 @@ public class Display extends JPanel{
 		super.paintComponent(g); //satisfies the parent class' requirements.
 		setBackground(Color.WHITE);
 		Train train = new Train(150, g);
-		train.addCar("kdjf", Color.WHITE);
+		train.addCar("Locomotive",Color.blue); 
+		train.addCar("Passenger",Color.gray);
+		train.addCar("Passenger",Color.gray); 
+		train.addCar("Freight",Color.green); 
+		train.addCar(3,"Passenger",Color.gray); 
+		train.addCar("Freight",Color.green); 
+		train.addCar("Caboose",Color.red); 
+		train.addCar(6,"Freight",Color.green); 
+		train.showCars(); 
 
 	}
 }

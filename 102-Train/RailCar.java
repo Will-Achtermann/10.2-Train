@@ -16,4 +16,12 @@ public class RailCar{
         g.fillOval(xCor, 460, 50, 50);
         g.fillOval(xCor + 100, 460, 50, 50);
     }
+
+    public int getxCor() {
+        return xCor;
+    }
+
+    public void setxCor(int xCor) {
+        this.xCor = xCor;
+    }
 }

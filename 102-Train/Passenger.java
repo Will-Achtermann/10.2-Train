@@ -19,13 +19,14 @@ public class Passenger extends RailCar{
 
         //Windows
         g.setColor(Color.WHITE);
-        g.fillRect(Xcor + 10, 425, 20, 20);
-        g.fillRect(Xcor + 40, 425, 20, 20);
-        g.fillRect(Xcor + 70, 425, 20, 20);
+        g.fillRect(xCor + 10, 425, 20, 20);
+        g.fillRect(xCor + 40, 425, 20, 20);
+        g.fillRect(xCor + 70, 425, 20, 20);
+        g.fillRect(xCor + 100, 425, 20, 20);
 
         //Roof
         g.setColor(color);
-        int[] xCors = {Xcor - 7, Xcor, Xcor};
+        int[] xCors = {xCor - 7, xCor, xCor};
         int[] yCors = {400, 400, 407};
         g.fillPolygon(xCors, yCors, 3);
 

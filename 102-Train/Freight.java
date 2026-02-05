@@ -1,9 +1,9 @@
 import java.awt.*;
 
-public class Passenger extends RailCar{
+public class Freight extends RailCar{
     private Color color;
 
-    public Passenger(int x, Graphics g, Color c){
+    public Freight(int x, Graphics g, Color c){
         super(x, g);
         this.color = c;
     }
@@ -18,8 +18,8 @@ public class Passenger extends RailCar{
         g.fillRect(xCor-40, 440, 40, 10);
 
         //Window
-        g.drawRect(Xcor + 25, 415, 25, 35);
-        g.drawRect(Xcor + 50, 415, 25, 35);
+        g.drawRect(xCor + 25, 415, 25, 35);
+        g.drawRect(xCor + 50, 415, 25, 35);
 
         g.drawLine(xCor + 25, 415, xCor + 50, 450);
         g.drawLine(xCor + 50, 415, xCor + 50, 450);

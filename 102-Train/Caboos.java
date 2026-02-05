@@ -19,14 +19,14 @@ public class Caboos extends RailCar{
 
         //Window
         g.setColor(Color.WHITE);
-        g.fillRect(Xcor + 20, 425, 20, 20);
-        g.fillRect(Xcor + 60, 425, 20, 20);
+        g.fillRect(xCor + 20, 425, 20, 20);
+        g.fillRect(xCor + 60, 425, 20, 20);
 
         //Top bit
         g.setColor(color);
-        g.fillRect(Xcor + 20, 370, 60, 30);
+        g.fillRect(xCor + 20, 370, 60, 30);
         g.setColor(color.BLACK);
-        g.fillRect(Xcor+15, 360, 70, 10);
+        g.fillRect(xCor+15, 360, 70, 10);
 
 
     }
